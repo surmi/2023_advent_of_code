@@ -11,8 +11,9 @@ fs.readdirSync('.').forEach(file => {
 })
 daysDir.sort()
 
-if (process.argv.length === 2) {
+if (process.argv.length == 2) {
     const recent = daysDir[daysDir.length-1];
     const d = require(`./${recent}/day`);
-    d.run();
+    d.run1star('./day1/input.txt');
+    d.run2star('./day1/input.txt');
 }
