@@ -14,6 +14,6 @@ daysDir.sort()
 if (process.argv.length == 2) {
     const recent = daysDir[daysDir.length-1];
     const d = require(`./${recent}/day`);
-    d.run1star('./day3/input.txt');
-    d.run2star('./day3/input.txt');
+    d.run1star(`./${recent}/input.txt`);
+    d.run2star(`./${recent}/input.txt`);
 }
