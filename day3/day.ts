@@ -3,5 +3,5 @@ export function run1star(inPath:string){
 }
 
 export function run2star(inPath:string){
-    console.log("Day3**");
+    console.log("Day 3**");
 }

@@ -6,6 +6,6 @@ function run1star(inPath) {
 }
 exports.run1star = run1star;
 function run2star(inPath) {
-    console.log("Day3**");
+    console.log("Day 3**");
 }
 exports.run2star = run2star;
