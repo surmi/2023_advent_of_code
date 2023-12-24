@@ -1,0 +1,32 @@
+{
+  "name": "2023_advent_of_code",
+  "version": "1.0.0",
+  "description": "advent of code 2023 solutions used to learn js/ts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc-watch --onSuccess \"node app.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surmi/2023_advent_of_code.git"
+  },
+  "keywords": [
+    "js",
+    "ts",
+    "advent_of_code_2023"
+  ],
+  "author": "surmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surmi/2023_advent_of_code/issues"
+  },
+  "homepage": "https://github.com/surmi/2023_advent_of_code#readme",
+  "devDependencies": {
+    "@tsconfig/node21": "^21.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "tsc-watch": "^6.0.4"
+  }
+}
