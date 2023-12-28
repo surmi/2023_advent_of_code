@@ -24,9 +24,11 @@
   "homepage": "https://github.com/surmi/2023_advent_of_code#readme",
   "devDependencies": {
     "@tsconfig/node21": "^21.0.0",
+    "@types/node": "^20.10.5",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "npm": "^10.2.5",
     "tsc-watch": "^6.0.4"
   }
 }
