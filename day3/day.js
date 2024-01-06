@@ -93,7 +93,7 @@ function run2star(inPath) {
         }
         return numArr;
     });
-    // find * and check if its box is hit by exactly two numbers; if yes, then multiply both numbers and add to the sum
+    // Find * and check if its box is hit by exactly two numbers; if yes, then multiply both numbers and add to the sum
     let res = lines.map((line, i) => {
         let lineSum = 0;
         let prevNums = nums[i - 1];
