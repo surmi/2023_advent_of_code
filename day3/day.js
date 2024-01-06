@@ -93,9 +93,7 @@ function run2star(inPath) {
         }
         return numArr;
     });
-    console.log(nums[0]);
-    // TODO: find * and check if its box is hit by exactly two numbers; if yes, then multiply both numbers and add to the sum
-    let tmp1 = [];
+    // find * and check if its box is hit by exactly two numbers; if yes, then multiply both numbers and add to the sum
     let res = lines.map((line, i) => {
         let lineSum = 0;
         let prevNums = nums[i - 1];
@@ -110,7 +108,6 @@ function run2star(inPath) {
             toCheck.push(nextNums);
         }
         let matched;
-        let tmp = [];
         while (null !== (matched = reStar.exec(line))) {
             let x0 = matched.index - 1;
             let x1 = matched.index + 1;
@@ -119,26 +116,12 @@ function run2star(inPath) {
                 numsPerStar.push(...hitNum(x0, x1, n));
             }
             numsPerStar.flat();
-            tmp.push(numsPerStar);
             if (numsPerStar.length === 2) {
                 lineSum += numsPerStar[0] * numsPerStar[1];
-                tmp1.push(numsPerStar);
-                // writeFileSync("/out.txt", `${numsPerStar[0]}, ${numsPerStar[1]}`);
             }
         }
-        // return tmp;
         return lineSum;
     }).reduce((acc, cur) => acc + cur);
     console.log(res);
-    // console.log(tmp1);
-    // for (let t of tmp1){
-    //     console.log(t);
-    // }
-    // for (let st of tmp1)
-    // writeFileSync("/out.txt", tmp1)
-    // for (let i=0; i<10;i++){
-    //     console.log(i+1)
-    //     console.log(res[i]);
-    // }
 }
 exports.run2star = run2star;
